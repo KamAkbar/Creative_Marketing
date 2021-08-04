@@ -2,17 +2,48 @@
   <div id="app">
     <div class="container">
       <Header />
+      <Intro />
+      <About />
+      <Cards />
+      <Features />
+      <Portfolio />
+      <Sponsors />
+      <Service />
     </div>
+      <Strategy />
+    <div class="container">
+      <Team />
+      <Testimonial />
+      <Contact />
+      <Subscribe />
+      <Articles />
+    </div>
+      <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Intro from './components/Intro.vue'
+import About from './components/About.vue'
+import Cards from './components/Cards.vue'
+import Features from './components/Features.vue'
+import Portfolio from './components/Portfolio.vue'
+import Sponsors from './components/Sponsors.vue'
+import Service from './components/Service.vue'
+import Contact from './components/Contact.vue'
+import Strategy from './components/Strategy.vue'
+import Team from './components/Team.vue'
+import Testimonial from './components/Testimonial.vue'
+import Subscribe from './components/Subscribe.vue'
+import Articles from './components/Articles.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
+    Header, Intro, About, Cards, Features, Portfolio, Sponsors, Service, Contact, Strategy, Team, Testimonial,
+    Subscribe, Articles, Footer
   }
 }
 </script>
@@ -105,7 +136,7 @@ label {
 
 //Buttons
 .btn{
-    padding: 11px 52px;
+    padding: 11px 40px!important;
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
@@ -122,6 +153,11 @@ label {
         color: $primary-color!important;
         border: 1px solid $primary-color!important;
         background-color: $secondary-color!important;
+    }
+    &_darkp{
+        color: #000000;
+        border: 1px solid $primary-color!important;
+        background-color: $dark-primary-color!important;
     }
 }
 

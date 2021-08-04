@@ -49,6 +49,9 @@ export default {
             margin-right: 42px;
             object-fit: contain;
         }
+        &__btn{
+            border: 1px solid #f07666;
+        }
     }
     .nav{
         display: flex;
@@ -59,6 +62,7 @@ export default {
         display: none;
     }
     .close-burger{
+        display: none;
         transform: rotate(45deg);
         font-weight: 200;
         font-size: 46px;
@@ -105,6 +109,7 @@ export default {
         }
 
         .close-burger{
+            display: block;
             position: absolute;
             top: 20px;
             right: 20px;
